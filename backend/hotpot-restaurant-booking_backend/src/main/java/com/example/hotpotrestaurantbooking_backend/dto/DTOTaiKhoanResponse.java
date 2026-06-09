@@ -2,18 +2,15 @@ package com.example.hotpotrestaurantbooking_backend.dto;
 
 
 import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
+import lombok.Getter;
 import lombok.NoArgsConstructor;
+import lombok.Setter;
 
-@Data
+@Setter
+@Getter
 @NoArgsConstructor
 @AllArgsConstructor
-@Builder
 public class DTOTaiKhoanResponse {
-    private Integer id;
     private String maTaiKhoan;
     private String tenDangNhap;
-    private String matKhau;
-    private Boolean trangThai;
 }

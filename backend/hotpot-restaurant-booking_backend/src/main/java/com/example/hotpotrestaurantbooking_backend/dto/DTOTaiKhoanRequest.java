@@ -1,17 +1,20 @@
 package com.example.hotpotrestaurantbooking_backend.dto;
 
+import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.Size;
 import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
+import lombok.Getter;
 import lombok.NoArgsConstructor;
+import lombok.Setter;
 
-@Data
+@Setter
+@Getter
 @NoArgsConstructor
 @AllArgsConstructor
-@Builder
 public class DTOTaiKhoanRequest {
-    private String maTaiKhoan;
+    @NotBlank(message = "tên đăng nhập không được bỏ trống")
     private String tenDangNhap;
+    @NotBlank(message = "tên đng nập không được bỏ trống")
+    @Size(min = 6, message = "mật khẩu tối thiểu 6 kí tự")
     private String matKhau;
-    private Boolean trangThai;
 }
