@@ -1,0 +1,26 @@
+# Backend
+backend/target/
+backend/.idea/
+
+# Frontend
+frontend/node_modules/
+frontend/dist/
+
+# Vue/Vite nested frontend
+fontend/hotpot-restaurant-booking_fontend/hotpot-restaurant-booking/node_modules/
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Gradle
+.gradle/
+backend/.gradle/
+
+# Backend
+backend/target/
+backend/.idea/

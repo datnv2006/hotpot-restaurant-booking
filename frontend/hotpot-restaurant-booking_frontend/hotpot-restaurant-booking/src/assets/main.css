@@ -1,0 +1,20 @@
+/* Reset toàn bộ để tràn màn hình */
+:root {
+  --gold: #c5a059;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 100vh;
+  background-color: #0a0a0a;
+  overflow-x: hidden;
+}
+
+#app {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  max-width: none; /* Xóa bỏ giới hạn chiều rộng */
+}
